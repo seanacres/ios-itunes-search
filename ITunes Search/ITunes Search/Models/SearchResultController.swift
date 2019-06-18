@@ -25,19 +25,19 @@ class SearchResultController {
             urlComponents?.queryItems?.append(URLQueryItem(name: "limit", value: "\(limit)"))
         }
         
-        guard let request = urlComponents?.url else {
+        guard let requestURL = urlComponents?.url else {
             print("Request URL is nil")
             return
         }
         
+        let request = URLRequest(url: requestURL)
+        
         URLSession.shared.dataTask(with: request) { (data, _, error) in
             if let error = error {
-                print("error fetching data with: \(error)")
                 completion(error)
             }
             
             guard let data = data else {
-                print("data from request is nil")
                 completion(NSError())
                 return
             }
@@ -49,7 +49,6 @@ class SearchResultController {
                 self.searchResults = searchResults.results
                 completion(nil)
             } catch {
-                print("decoding failed with: \(error)")
                 completion(error)
             }
         }.resume()
