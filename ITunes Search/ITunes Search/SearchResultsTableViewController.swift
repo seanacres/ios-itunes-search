@@ -63,7 +63,10 @@ extension SearchResultsTableViewController: UISearchBarDelegate {
             resultType = .software
         }
         
-        searchResultsController.performSearch(searchTerm: searchTerm, resultType: resultType) { (error) in
+        searchResultsController.performSearch(searchTerm: searchTerm,
+                                              resultType: resultType,
+                                              countryCode: .us,
+                                              limit: 5) { (error) in
             if let error = error {
                 print("error performing search for \(resultType): \(error)")
             } else {
