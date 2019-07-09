@@ -38,7 +38,7 @@ class SearchResultsTableViewController: UITableViewController {
     }
     
     @IBAction func segmentChanged(_ sender: Any) {
-        
+        self.searchBarSearchButtonClicked(searchBar)
     }
     
 }
