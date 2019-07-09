@@ -32,6 +32,10 @@ class SearchResultsTableViewController: UITableViewController {
         let searchResult = searchResultsController.searchResults[indexPath.row]
         
         cell.textLabel?.text = searchResult.title
+        if let collectionName = searchResult.collectionName {
+            cell.textLabel?.text = collectionName
+        }
+        
         cell.detailTextLabel?.text = searchResult.creator
 
         return cell
@@ -61,7 +65,7 @@ extension SearchResultsTableViewController: UISearchBarDelegate {
         
         searchResultsController.performSearch(searchTerm: searchTerm, resultType: resultType) { (error) in
             if let error = error {
-                print("error performing search for software: \(error)")
+                print("error performing search for \(resultType): \(error)")
             } else {
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
