@@ -54,6 +54,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		6637629D22D53665007B6038 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6637629922D52C2F007B6038 /* SearchResultsTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6637629E22D53675007B6038 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				66DBDF3422B95EA100239E7D /* Main.storyboard */,
+				66DBDF3922B95EA200239E7D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		66DBDF2422B95EA100239E7D = {
 			isa = PBXGroup;
 			children = (
@@ -73,12 +90,11 @@
 		66DBDF2F22B95EA100239E7D /* ITunes Search */ = {
 			isa = PBXGroup;
 			children = (
-				6637629822D52B1D007B6038 /* Model */,
 				66DBDF3022B95EA100239E7D /* AppDelegate.swift */,
-				66DBDF3422B95EA100239E7D /* Main.storyboard */,
-				6637629922D52C2F007B6038 /* SearchResultsTableViewController.swift */,
+				6637629E22D53675007B6038 /* Storyboards */,
+				6637629822D52B1D007B6038 /* Model */,
+				6637629D22D53665007B6038 /* View Controllers */,
 				66DBDF3722B95EA200239E7D /* Assets.xcassets */,
-				66DBDF3922B95EA200239E7D /* LaunchScreen.storyboard */,
 				66DBDF3C22B95EA200239E7D /* Info.plist */,
 			);
 			path = "ITunes Search";
