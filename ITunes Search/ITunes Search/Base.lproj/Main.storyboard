@@ -21,35 +21,38 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="RrM-r6-SaA">
-                                    <rect key="frame" x="0.0" y="4.5" width="414" height="91"/>
-                                    <subviews>
-                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4Ns-P3-jDm">
-                                            <rect key="frame" x="82" y="0.0" width="250" height="29"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="250" id="voF-Nb-2qS"/>
-                                            </constraints>
-                                            <segments>
-                                                <segment title="Apps"/>
-                                                <segment title="Music"/>
-                                                <segment title="Movies"/>
-                                            </segments>
-                                        </segmentedControl>
-                                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gjy-Z6-KBs">
-                                            <rect key="frame" x="0.0" y="35" width="414" height="56"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </searchBar>
-                                    </subviews>
-                                </stackView>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4Ns-P3-jDm">
+                                    <rect key="frame" x="20" y="8" width="374" height="29"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="qMY-Yo-p6m"/>
+                                    </constraints>
+                                    <segments>
+                                        <segment title="Apps"/>
+                                        <segment title="Music"/>
+                                        <segment title="Movies"/>
+                                    </segments>
+                                    <connections>
+                                        <action selector="segmentChanged:" destination="lGL-Cd-OZG" eventType="valueChanged" id="7wA-tm-Jrw"/>
+                                    </connections>
+                                </segmentedControl>
+                                <searchBar contentMode="redraw" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="gjy-Z6-KBs">
+                                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="RrM-r6-SaA" firstAttribute="centerY" secondItem="cTz-d4-cu9" secondAttribute="centerY" id="Ft6-Bf-UNO"/>
-                                <constraint firstItem="RrM-r6-SaA" firstAttribute="centerX" secondItem="cTz-d4-cu9" secondAttribute="centerX" id="bAB-ow-8j6"/>
+                                <constraint firstItem="gjy-Z6-KBs" firstAttribute="leading" secondItem="cTz-d4-cu9" secondAttribute="leading" id="18Y-b7-UjK"/>
+                                <constraint firstItem="4Ns-P3-jDm" firstAttribute="top" secondItem="cTz-d4-cu9" secondAttribute="top" constant="8" id="AWm-yc-iff"/>
+                                <constraint firstAttribute="trailing" secondItem="4Ns-P3-jDm" secondAttribute="trailing" constant="20" id="K0T-wM-dxq"/>
+                                <constraint firstItem="4Ns-P3-jDm" firstAttribute="leading" secondItem="cTz-d4-cu9" secondAttribute="leading" constant="20" id="NZc-ME-I5U"/>
+                                <constraint firstAttribute="bottom" secondItem="gjy-Z6-KBs" secondAttribute="bottom" id="bo6-JU-gpk"/>
+                                <constraint firstItem="gjy-Z6-KBs" firstAttribute="top" secondItem="4Ns-P3-jDm" secondAttribute="bottom" constant="8" id="fjQ-Ze-rsQ"/>
+                                <constraint firstAttribute="trailing" secondItem="gjy-Z6-KBs" secondAttribute="trailing" id="l8b-ER-21l"/>
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Dhf-pf-OKb" detailTextLabel="av3-Q4-Tcd" style="IBUITableViewCellStyleSubtitle" id="ORO-QJ-VZT">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultCell" textLabel="Dhf-pf-OKb" detailTextLabel="av3-Q4-Tcd" style="IBUITableViewCellStyleSubtitle" id="ORO-QJ-VZT">
                                 <rect key="frame" x="0.0" y="128" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ORO-QJ-VZT" id="p2S-3x-Cdl">
