@@ -10,8 +10,8 @@
 		6637629322D52915007B6038 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637629222D52915007B6038 /* SearchResult.swift */; };
 		6637629522D52944007B6038 /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637629422D52944007B6038 /* ResultType.swift */; };
 		6637629722D5295E007B6038 /* SearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637629622D5295E007B6038 /* SearchResultController.swift */; };
+		6637629A22D52C2F007B6038 /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637629922D52C2F007B6038 /* SearchResultsTableViewController.swift */; };
 		66DBDF3122B95EA100239E7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBDF3022B95EA100239E7D /* AppDelegate.swift */; };
-		66DBDF3322B95EA100239E7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBDF3222B95EA100239E7D /* ViewController.swift */; };
 		66DBDF3622B95EA100239E7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66DBDF3422B95EA100239E7D /* Main.storyboard */; };
 		66DBDF3822B95EA200239E7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DBDF3722B95EA200239E7D /* Assets.xcassets */; };
 		66DBDF3B22B95EA200239E7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66DBDF3922B95EA200239E7D /* LaunchScreen.storyboard */; };
@@ -21,9 +21,9 @@
 		6637629222D52915007B6038 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		6637629422D52944007B6038 /* ResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultType.swift; sourceTree = "<group>"; };
 		6637629622D5295E007B6038 /* SearchResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultController.swift; sourceTree = "<group>"; };
+		6637629922D52C2F007B6038 /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
 		66DBDF2D22B95EA100239E7D /* ITunes Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITunes Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DBDF3022B95EA100239E7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66DBDF3222B95EA100239E7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		66DBDF3522B95EA100239E7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66DBDF3722B95EA200239E7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66DBDF3A22B95EA200239E7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,8 +72,8 @@
 			children = (
 				6637629822D52B1D007B6038 /* Model */,
 				66DBDF3022B95EA100239E7D /* AppDelegate.swift */,
-				66DBDF3222B95EA100239E7D /* ViewController.swift */,
 				66DBDF3422B95EA100239E7D /* Main.storyboard */,
+				6637629922D52C2F007B6038 /* SearchResultsTableViewController.swift */,
 				66DBDF3722B95EA200239E7D /* Assets.xcassets */,
 				66DBDF3922B95EA200239E7D /* LaunchScreen.storyboard */,
 				66DBDF3C22B95EA200239E7D /* Info.plist */,
@@ -153,8 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6637629522D52944007B6038 /* ResultType.swift in Sources */,
-				66DBDF3322B95EA100239E7D /* ViewController.swift in Sources */,
 				6637629322D52915007B6038 /* SearchResult.swift in Sources */,
+				6637629A22D52C2F007B6038 /* SearchResultsTableViewController.swift in Sources */,
 				66DBDF3122B95EA100239E7D /* AppDelegate.swift in Sources */,
 				6637629722D5295E007B6038 /* SearchResultController.swift in Sources */,
 			);
